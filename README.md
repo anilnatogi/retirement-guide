@@ -26,12 +26,13 @@ A beautiful, modern website that explains retirement savings accounts in languag
   - Easy dropdown selection
   - Direct link to open Fidelity account
 
-### 🤖 AI Chat Assistant (NEW!)
-  - Powered by Claude AI
+### 🤖 AI Chat Assistant (NEW!) - 100% FREE!
+  - Powered by Google Gemini AI (completely free, no credit card needed!)
   - Ask questions about retirement accounts in natural language
   - Get personalized answers about contribution limits, tax implications, and more
   - Chat remembers conversation context
   - Beautiful chat interface with typing indicators
+  - No cost, no limits for personal use!
 
 ## 🚀 Quick Start
 
@@ -54,14 +55,15 @@ A beautiful, modern website that explains retirement savings accounts in languag
    - Click the chat button to ask questions
    - Click "Open Account with Fidelity" when ready to start saving!
 
-## 🤖 Setting Up AI Chat (Optional but Recommended!)
+## 🤖 Setting Up AI Chat (100% FREE!)
 
-The AI chat feature requires an Anthropic API key. Don't worry - it's free to get started!
+The AI chat feature uses Google Gemini - **completely free, no credit card required!**
 
-1. **Get your API key** (takes 2 minutes):
-   - Go to https://console.anthropic.com/
-   - Sign up for free (get $5 in credits!)
-   - Create an API key
+1. **Get your FREE API key** (takes 1 minute):
+   - Go to https://makersuite.google.com/app/apikey
+   - Sign in with your Google account
+   - Click "Create API Key"
+   - Copy it!
 
 2. **Configure the key**:
    ```bash
@@ -76,7 +78,7 @@ The AI chat feature requires an Anthropic API key. Don't worry - it's free to ge
 
 See **[CHAT_SETUP.md](CHAT_SETUP.md)** for detailed instructions!
 
-**Note:** The website works without the chat feature, but you'll get much more value with it!
+**Note:** The website works without the chat feature, but the AI chat makes it SO much better - and it's FREE!
 
 ## Deploy to the Internet (Make it Public!)
 
@@ -92,9 +94,9 @@ vercel
 
 - **Frontend:** HTML5, CSS3 (Glassmorphism), JavaScript
 - **Backend:** Node.js with Express
-- **AI:** Anthropic Claude 3.5 Sonnet
+- **AI:** Google Gemini Pro (100% FREE!)
 - **Styling:** Modern CSS with Inter font, gradients, and smooth animations
-- **APIs:** Anthropic Messages API
+- **APIs:** Google Generative AI API
 
 ## 📁 Project Structure
 

@@ -85,7 +85,7 @@ class ChatUI {
         } catch (error) {
             console.error('Chat error:', error);
             this.removeTypingIndicator();
-            this.addMessage('Sorry, I encountered an error. Please make sure the ANTHROPIC_API_KEY is set in your .env file.', 'assistant');
+            this.addMessage('Sorry, I encountered an error. Please make sure the GEMINI_API_KEY is set in your .env file. See CHAT_SETUP.md for instructions!', 'assistant');
         } finally {
             this.chatSend.disabled = false;
         }
