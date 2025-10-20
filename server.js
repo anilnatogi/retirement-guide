@@ -12,7 +12,8 @@ let model;
 
 if (process.env.GEMINI_API_KEY) {
     genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+    // Updated to use the latest Gemini model
+    model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 }
 
 // Middleware
@@ -109,14 +110,20 @@ app.post('/api/chat', async (req, res) => {
 
     } catch (error) {
         console.error('Chat API error:', error);
+        console.error('Error details:', error.message);
+        console.error('Full error:', JSON.stringify(error, null, 2));
 
         if (error.message && error.message.includes('API_KEY')) {
             res.status(401).json({
                 error: 'Invalid API key. Please check your GEMINI_API_KEY in .env file.'
             });
+        } else if (error.message && error.message.includes('API key not valid')) {
+            res.status(401).json({
+                error: 'Invalid API key. Please create a new one at https://makersuite.google.com/app/apikey'
+            });
         } else {
             res.status(500).json({
-                error: 'Failed to get response from Gemini. Please try again.'
+                error: `Failed to get response from Gemini: ${error.message || 'Unknown error'}`
             });
         }
     }
