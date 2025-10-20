@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Retirement Guide - Choose Your Future!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Your Retirement Savings Guide 🌟</h1>
+            <p class="subtitle">Saving for your future, made simple!</p>
+        </header>
+
+        <div class="main-content">
+            <div class="selector-section">
+                <label for="retirement-tool">Choose a retirement savings account:</label>
+                <select id="retirement-tool" class="dropdown">
+                    <option value="">-- Pick one to learn more --</option>
+                    <option value="roth-ira">Roth IRA</option>
+                    <option value="traditional-ira">Traditional IRA</option>
+                    <option value="401k">401(k)</option>
+                    <option value="roth-401k">Roth 401(k)</option>
+                    <option value="sep-ira">SEP IRA</option>
+                </select>
+            </div>
+
+            <div id="info-display" class="info-display hidden">
+                <div class="info-card">
+                    <h2 id="tool-name"></h2>
+
+                    <div class="info-section">
+                        <h3>🎯 Can I Use This?</h3>
+                        <div id="eligibility" class="content-box"></div>
+                    </div>
+
+                    <div class="info-section">
+                        <h3>💰 How Much Can I Save?</h3>
+                        <div id="contribution-limits" class="content-box"></div>
+                    </div>
+
+                    <div class="info-section">
+                        <h3>🏦 When Can I Take Money Out?</h3>
+                        <div id="withdrawal-rules" class="content-box"></div>
+                    </div>
+
+                    <div class="info-section">
+                        <h3>👨‍👩‍👧‍👦 What Happens to My Kids?</h3>
+                        <div id="inheritance-rules" class="content-box"></div>
+                    </div>
+                </div>
+
+                <div class="action-section">
+                    <a href="https://www.fidelity.com" target="_blank" class="fidelity-button">
+                        Open Account with Fidelity →
+                    </a>
+                </div>
+            </div>
+
+            <div id="placeholder" class="placeholder">
+                <div class="placeholder-icon">📚</div>
+                <p>Select a retirement account from the dropdown above to learn about it!</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>💡 Remember: The earlier you start saving, the more your money grows!</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
