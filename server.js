@@ -12,8 +12,8 @@ let model;
 
 if (process.env.GEMINI_API_KEY) {
     genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    // Updated to use the latest Gemini model
-    model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    // Use Gemini 1.0 Pro which is universally available
+    model = genAI.getGenerativeModel({ model: 'gemini-1.0-pro' });
 }
 
 // Middleware
